@@ -1,6 +1,6 @@
 # Cardiac dynamics of the TP06 model with focus on early afterdepolarizations (EADs)
 
-**Description**
+## Description
 
 We modified and simplfied of the cardiac muscle cell model by Ten Tusscher and Panfilov from 2006 (TP06 model) to perform numerical bifurcation analysis. This allows us to analysis the dynamics of the TP06 model and to predict the occurence of normal action potentials or cardiac arrhythmia such as early afterdepolarizations.
 
@@ -11,6 +11,8 @@ The TP06 model  is statedd in the following papers:
 In this repository we collect the MATLAB files, which are needed to:
 1) simulation and compare the TP06 model with our modified version,
 2) to analysis the modified TP06 model by means of (numerical) bifurcation theory using Matcont.
+
+## Background
 
 Bifurcation analysis of such kind of model is performed in several studies, see for instance: 
 * Bifurcation Analysis of a Modified Cardiac Cell Model, André H. Erhardt, and Susanne Solem (2022) https://doi.org/10.1137/21M1425359
