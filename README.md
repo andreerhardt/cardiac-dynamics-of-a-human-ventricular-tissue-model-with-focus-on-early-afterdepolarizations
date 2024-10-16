@@ -32,4 +32,4 @@ I_\text{ion}=I_\text{K1}+I_\text{to}+I_\text{Kr}+I_\text{Ks}+I_\text{CaL}+I_\tex
 +I_\text{bNa}+I_\text{NaCa}+I_\text{bCa}+I_\text{pK}+I_\text{pCa}.
 $$
 
-These currents are depending on individual ionic conductances $\mathrm{G}_\text{current}$ and Nernst potentials $\mathrm{E}_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents.
+These currents are depending on individual ionic conductances $G_\text{current}$ and Nernst potentials $E_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents.
