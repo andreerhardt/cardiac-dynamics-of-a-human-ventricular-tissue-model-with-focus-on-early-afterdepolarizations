@@ -24,9 +24,12 @@ The electrophysiological behaviour of a cardiac myocyte is represented by the fo
 $$
 	C_m\frac{d V}{dt}=-I_\text{ion}+I_\text{stim},
 $$
+
 where $V$ denotes the voltage (in $mV$) and $t$ the time (in $ms$), while $I_\mathrm{ion}$ is the sum of all transmembrane ionic currents, i.e.
+
 $$
 I_\text{ion}=I_\text{K1}+I_\text{to}+I_\text{Kr}+I_\text{Ks}+I_\text{CaL}+I_\text{NaK}+I_\text{Na}
 +I_\text{bNa}+I_\text{NaCa}+I_\text{bCa}+I_\text{pK}+I_\text{pCa}.
 $$
+
 These currents are depending on individual ionic conductances $\mathrm{G}_\text{current}$ and Nernst potentials $\mathrm{E}_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents.
