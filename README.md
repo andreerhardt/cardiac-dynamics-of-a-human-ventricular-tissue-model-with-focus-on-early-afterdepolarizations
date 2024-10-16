@@ -22,11 +22,11 @@ Here, the main focus in on the model reduction and enhancement of the efficiency
 The electrophysiological behaviour of a cardiac myocyte is represented by the following ODE:
 
 $$
-	C_m\frac{\mathrm{d} V}{\mathrm{d}t}=-\mathrm{I}_\mathrm{ion}+\mathrm{I}_\mathrm{stim},
+	C_m\frac{d V}{dt}=-I_\text{ion}+I_\text{stim},
 $$
-where $V$ denotes the voltage (in $mV$) and $t$ the time (in $ms$), while $\mathrm{I}_\mathrm{ion}$ is the sum of all transmembrane ionic currents, i.e.
+where $V$ denotes the voltage (in $mV$) and $t$ the time (in $ms$), while $I_\mathrm{ion}$ is the sum of all transmembrane ionic currents, i.e.
 $$
-\mathrm{I}_\text{ion}=\mathrm{I}_\text{K1}+\mathrm{I}_\text{to}+\mathrm{I}_\text{Kr}+\mathrm{I}_\text{Ks}+\mathrm{I}_\text{CaL}+\mathrm{I}_\text{NaK}+\mathrm{I}_\text{Na}
-+\mathrm{I}_\text{bNa}+\mathrm{I}_\text{NaCa}+\mathrm{I}_\text{bCa}+\mathrm{I}_\text{pK}+\mathrm{I}_\text{pCa}.
+I_\text{ion}=I_\text{K1}+I_\text{to}+I_\text{Kr}+I_\text{Ks}+I_\text{CaL}+I_\text{NaK}+I_\text{Na}
++I_\text{bNa}+I_\text{NaCa}+I_\text{bCa}+I_\text{pK}+I_\text{pCa}.
 $$
 These currents are depending on individual ionic conductances $\mathrm{G}_\text{current}$ and Nernst potentials $\mathrm{E}_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents.
