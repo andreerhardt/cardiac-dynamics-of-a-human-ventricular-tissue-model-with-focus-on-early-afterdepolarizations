@@ -12,6 +12,11 @@ In this repository we collect the MATLAB files, which are needed to:
 1) simulation and compare the TP06 model with our modified version,
 2) to analysis the modified TP06 model by means of (numerical) bifurcation theory using Matcont.
 
+***Folders***
+- **bifurcation analysis** here the needed Matlab files are provided to run bifurcation analysis using [MatCont7p5](
+https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/).
+- **comparison plots** here the different functions files for the TP06 model and its reduced versions are provided as well as a main file to simulate the models using Matlab and to create comparison plots.
+
 ## Background
 
 Bifurcation analysis of such kind of model is performed in several studies, see for instance: 
