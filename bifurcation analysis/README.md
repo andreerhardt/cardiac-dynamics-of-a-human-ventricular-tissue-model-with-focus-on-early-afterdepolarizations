@@ -23,5 +23,5 @@ Here, the needed files for the numerical bifurcation analysis of the modified mo
 <p align="center">
 <img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/bif_plot_14d.png" width="33%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/bif_plot_16d.png" width="33%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/bif_plot_18d.png" width="33%"/>
   
-  -From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript-
+  _From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript_
 </p>
