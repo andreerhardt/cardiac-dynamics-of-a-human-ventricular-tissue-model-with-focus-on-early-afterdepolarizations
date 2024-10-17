@@ -1,3 +1,4 @@
+%% author: André H. Erhardt (andre.erhardt@wias-berlin.de, https://orcid.org/0000-0003-4389-8554)
 clear all
 close all
 clc
