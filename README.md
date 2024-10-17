@@ -13,15 +13,15 @@ In this repository we collect the MATLAB files, which are needed to:
 2) to analysis the modified TP06 model by means of (numerical) bifurcation theory using Matcont.
 
 ***Folders***
-- **bifurcation analysis** here the needed Matlab files are provided to run bifurcation analysis using [MatCont7p5](
+- `./bifurcation analysis` here the needed Matlab files are provided to run bifurcation analysis using [MatCont7p5](
 https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/).
-- **comparison plots** here the different functions files for the TP06 model and its reduced versions are provided as well as a main file to simulate the models using Matlab and to create comparison plots.
+- `./comparison plots here the different functions files for the TP06 model and its reduced versions are provided as well as a main file to simulate the models using Matlab and to create comparison plots.
 
 ## Background
 
 Bifurcation analysis of such kind of model is performed in several studies, see for instance: 
 * Bifurcation Analysis of a Modified Cardiac Cell Model, André H. Erhardt, and Susanne Solem (2022) https://doi.org/10.1137/21M1425359
-* 
+* Rose P, Schleimer J-H, Schreiber S (2020) Modifications of sodium channel voltage dependence induce arrhythmia-favouring dynamics of cardiac action potentials. PLoS ONE 15(8): e0236949. https://doi.org/10.1371/journal.pone.0236949
 * On complex dynamics in a Purkinje and a ventricular cardiac cell model, André H. Erhardt, and Susanne Solem (2021) https://doi.org/10.1016/j.cnsns.2020.105511
 
 Here, the main focus in on the model reduction and enhancement of the efficiency of the numerical bifurcation analysis without loss of information to the original TP06 model.
