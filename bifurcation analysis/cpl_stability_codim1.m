@@ -81,12 +81,12 @@ if length(seq) >2
     end
 end
 
-% HL    = {'stable steady states','unstable steady states','fold bifurcation','branch point bifurcation','subcritical Hopf bifurcation','supercritical Hopf bifurcation'};
-% l     = find(h==0);
-% h(l)  = [];
-% HL(l) = [];
-% L = legend(h,HL);
-% set(L,'Interpreter','latex','Box','off','Fontsize',50,'FontWeight','bold','Location','northeast');
-% set(gca,'Fontsize',50,'FontWeight','bold');
+HL    = {'stable steady states','unstable steady states','fold bifurcation','branch point bifurcation','subcritical Hopf bifurcation','supercritical Hopf bifurcation'};
+l     = find(h==0);
+h(l)  = [];
+HL(l) = [];
+L = legend(h,HL);
+set(L,'Interpreter','latex','Box','off','Fontsize',50,'FontWeight','bold','Location','northeast');
+set(gca,'Fontsize',50,'FontWeight','bold');
 grid on
 end
