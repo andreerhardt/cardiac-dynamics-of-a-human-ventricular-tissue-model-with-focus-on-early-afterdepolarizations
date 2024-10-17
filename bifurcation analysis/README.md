@@ -1,6 +1,6 @@
 ## Description
 
-Here, the needed files for the numerical bifurcation analysis of the modified models are provided. We first comment on the endocardial case. Notice that running these files will cause - depending on the used resources - same days. Moreover, the output folders have 500 - 800 MB and thus, they can not be uploaded here.
+Here, the needed files for the numerical bifurcation analysis of the modified models are provided. We first comment on the endocardial case. Notice that running these files will cause - depending on the used resources - some days. Moreover, the output folders have 500 - 800 MB and thus, they can not be uploaded here.
 
 **List of Matlab function files and description**
 - `TP06_endo.m`: the TP06 .m function file containing the 19-dimensional ODE model for the endocardial cell stated by ten Tusscher and Panfilov in 2006
