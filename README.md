@@ -28,7 +28,7 @@ Here, the main focus in on the model reduction and enhancement of the efficiency
 
 <p align="center">
 	[embed][http://example.com/file.pdf](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.pdf[/embed]
-<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.pdf" width="50%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/physical_system.pdf" width="50%"/><img
+<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.pdf" width="50%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/physical_system.pdf" width="50%"/>
   
   _From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript_
 </p>
