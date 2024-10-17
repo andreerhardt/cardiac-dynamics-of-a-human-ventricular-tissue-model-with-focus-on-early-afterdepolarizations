@@ -4,7 +4,7 @@
 
 We modified and simplfied of the cardiac muscle cell model by Ten Tusscher and Panfilov from 2006 (TP06 model) to perform numerical bifurcation analysis. This allows us to analysis the dynamics of the TP06 model and to predict the occurence of normal action potentials or cardiac arrhythmia such as early afterdepolarizations.
 
-The TP06 model  is statedd in the following papers:
+The TP06 model  is stated in the following papers:
 * _A model for human ventricular tissue_, **K. H. W. J. ten Tusscher, D. Noble, P. J. Noble, and A. V. Panfilov** (2004) https://doi.org/10.1152/ajpheart.00794.2003
 * _Alternans and spiral breakup in a human ventricular tissue model_, **K. H. W. J. ten Tusscher, and A. V. Panfilov** (2006) https://doi.org/10.1152/ajpheart.00109.2006
 
