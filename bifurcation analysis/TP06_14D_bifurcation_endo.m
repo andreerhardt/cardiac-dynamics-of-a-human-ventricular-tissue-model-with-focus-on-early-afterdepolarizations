@@ -166,7 +166,7 @@ opt = contset(opt,'MaxCorrIters'       ,     50);
 %% save, plot and continue
 save(name)
 
-for i = 1:5     
+for i = 1:10     
     i
     figure;
     hold on
