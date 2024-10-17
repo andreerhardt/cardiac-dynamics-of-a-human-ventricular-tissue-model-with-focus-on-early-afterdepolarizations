@@ -1,3 +1,4 @@
+%% author: André H. Erhardt (andre.erhardt@wias-berlin.de, https://orcid.org/0000-0003-4389-8554)
 function varargout = cplanim(xeq,seq,feq,variable1,variable2,color,Pointsize,Linesize)
 state = zeros(length(feq),2);
 parameter = zeros(length(feq),2);
