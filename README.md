@@ -27,6 +27,7 @@ Bifurcation analysis of such kind of model is performed in several studies, see 
 Here, the main focus in on the model reduction and enhancement of the efficiency of the numerical bifurcation analysis without loss of information to the original TP06 model.
 
 <p align="center">
+	[embed][http://example.com/file.pdf](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.pdf)[/embed]
 <img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.pdf" width="50%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/physical_system.pdf" width="50%"/><img
   
   _From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript_
