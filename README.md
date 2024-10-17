@@ -20,7 +20,7 @@ https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/).
 ## Background
 
 Bifurcation analysis of such kind of model is performed in several studies, see for instance: 
-* _ _Bifurcation Analysis of a Modified Cardiac Cell Model_ _, *André H. Erhardt, and Susanne Solem* (2022) https://doi.org/10.1137/21M1425359
+* _Bifurcation Analysis of a Modified Cardiac Cell Model_, *André H. Erhardt, and Susanne Solem* (2022) https://doi.org/10.1137/21M1425359
 * _ Modifications of sodium channel voltage dependence induce arrhythmia-favouring dynamics of cardiac action potentials_, *Pia Rose, Jan-Hendrik Schleimer, Susanne Schreiber* (2020) https://doi.org/10.1371/journal.pone.0236949
 * _ _On complex dynamics in a Purkinje and a ventricular cardiac cell model_ _, *André H. Erhardt, and Susanne Solem* (2021) https://doi.org/10.1016/j.cnsns.2020.105511
 
