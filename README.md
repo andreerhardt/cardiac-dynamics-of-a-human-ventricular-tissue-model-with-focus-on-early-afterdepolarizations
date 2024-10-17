@@ -26,13 +26,19 @@ Bifurcation analysis of such kind of model is performed in several studies, see 
 
 Here, the main focus in on the model reduction and enhancement of the efficiency of the numerical bifurcation analysis without loss of information to the original TP06 model.
 
+To be able to analysis the dynamics of a cardiac muscle cell mathematically one describes the biological cell 
+
 <p align="center">
-<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.png" width="50%"/><img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/physical_system.png" width="50%"/>
-  
-  _From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript_
+<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/biological_cell.png" width="50%"/>
 </p>
 
-The electrophysiological behaviour of a cardiac myocyte is represented by the following ODE:
+as physical system
+
+<p align="center">
+<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/physical_system.png" width="50%"/>
+</p>
+
+which one can utilize to derive a mathematical model of a cardiac muscle cell. This electrophysiological behaviour of a cardiac myocyte is represented by the following ODE:
 
 $$
 	C_m\frac{d V}{dt}=-I_\text{ion}+I_\text{stim},
