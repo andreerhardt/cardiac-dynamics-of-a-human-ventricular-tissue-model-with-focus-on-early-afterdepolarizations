@@ -26,6 +26,9 @@ Bifurcation analysis of such kind of model is performed in several studies, see 
 
 Here, the main focus in on the model reduction and enhancement of the efficiency of the numerical bifurcation analysis without loss of information to the original TP06 model.
 
+
+media/biological_cell.pdf
+
 The electrophysiological behaviour of a cardiac myocyte is represented by the following ODE:
 
 $$
