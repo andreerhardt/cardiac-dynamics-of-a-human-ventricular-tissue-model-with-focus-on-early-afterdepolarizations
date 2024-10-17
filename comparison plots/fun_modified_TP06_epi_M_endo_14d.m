@@ -1,3 +1,4 @@
+%% author: André H. Erhardt (andre.erhardt@wias-berlin.de, https://orcid.org/0000-0003-4389-8554)
 function dydt = fun_eval(t,y,par_g_Kr,par_g_Ks,par_g_Na,par_g_K1,par_g_CaL,par_K_i,stim_amplitude,choice)
 %% variables
 V       = y(1); 
