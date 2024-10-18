@@ -194,7 +194,7 @@ end
 q = 7;
 figure;
 hold on 
-plotfigure1(xlc(:,1:end),vlc(:,1:end),slc,[size(xlc,1) q 1],[1 0 0]);
+plotlimitcycle(xlc(:,1:1:end),vlc(:,1:1:end),slc,[size(xlc,1) q 1],[1 0 0],0.3,'none',0.2)
 cpl_stability_codim1(xeq,seq,feq,q,1,[0 0 0],50,3)
 cpl_stability_codim1(xeq1a,seq1a,feq1a,q,1,[0 0 0],50,3)
 xlim([0.06 0.13])
