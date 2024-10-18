@@ -45,7 +45,17 @@ I_\text{ion}=I_\text{K1}+I_\text{to}+I_\text{Kr}+I_\text{Ks}+I_\text{CaL}+I_\tex
 +I_\text{bNa}+I_\text{NaCa}+I_\text{bCa}+I_\text{pK}+I_\text{pCa}.
 $$
 
-These currents are depending on individual ionic conductances $G_\text{current}$ and Nernst potentials $E_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents.
+These currents are depending on individual ionic conductances $G_\text{current}$ and Nernst potentials $E_\text{current}$. Moreover, they may depend on gating variables, which are important for the activation and inactivation of the ion currents. Using such a model one is able to simulation characteristic action potential of a cardiac muscle cell
+
+<p align="center">
+<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/AP.png" width="50%"/>
+</p>
+
+as well as EADs
+
+<p align="center">
+<img src="https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/blob/main/media/EAD.png" width="50%"/>
+</p>
 
 **Bifurcation theory:** Bifurcation analysis of such kind of model is performed in several studies, see for instance: 
 * _Bifurcation Analysis of a Modified Cardiac Cell Model_, **André H. Erhardt, and Susanne Solem** (2022) https://doi.org/10.1137/21M1425359
