@@ -101,7 +101,6 @@ q = 6;
 figure;
 hold on 
 %title('14-dimensional TP06 model')
-% plotlimitcycle(xlc(:,1:1:end),vlc(:,1:1:end),slc,[size(xlc,1) q 1],[1 0 0],0.3,':',0.2)
 plotlimitcycle(xlc(:,1:1:end),vlc(:,1:1:end),slc,[size(xlc,1) q 1],[1 0 0],0.3,'none',0.2)
 cpl_stability_codim1(xeq,seq,feq,q,1,[0 0 0],50,3)
 cpl_stability_codim1(xeq1a,seq1a,feq1a,q,1,[0 0 0],50,3)
