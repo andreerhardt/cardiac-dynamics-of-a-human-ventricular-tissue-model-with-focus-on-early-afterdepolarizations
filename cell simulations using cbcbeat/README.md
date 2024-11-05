@@ -1,6 +1,6 @@
 ## Description 
 
-In this folder we provide the python files for the TP06 model using cbcbeat https://github.com/ComputationalPhysiology/cbcbeat and its modified versions:
+In this folder we provide the python files for the TP06 model using [cbcbeat](https://github.com/ComputationalPhysiology/cbcbeat) and its modified versions:
 - full endocardial TP06 model `tentusscher_panfilov_2006_endo_cell_14d.py`,
 - full epicardial TP06 model `tentusscher_panfilov_2006_epi_cell_14d.py`,
 - 14-dimensional endocardial model `tentusscher_panfilov_2006_endo_cell_14d.py`,
