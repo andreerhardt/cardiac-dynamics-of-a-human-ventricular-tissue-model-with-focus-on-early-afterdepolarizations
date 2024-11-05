@@ -13,7 +13,7 @@ In this repository we collect the MATLAB and Python files, which are needed to:
 2) to analysis the modified TP06 model by means of (numerical) bifurcation theory using [MatCont7p5](https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/),
 3) to perform 2D simulations of the corresponding monodomain model using [FEniCS](https://fenicsproject.org) and [fenics-beat](https://github.com/finsberg/fenics-beat).
 
-***Folders***
+## Folders 
 - [`./bifurcation analysis`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/bifurcation%20analysis) here the needed MATLAB files are provided to run bifurcation analysis using [MatCont7p5](
 https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/).
 - [`./comparison plots`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/comparison%20plots) here the different functions files for the TP06 model and its reduced versions are provided as well as a main file to simulate the models using MATLAB and to create comparison plots.
