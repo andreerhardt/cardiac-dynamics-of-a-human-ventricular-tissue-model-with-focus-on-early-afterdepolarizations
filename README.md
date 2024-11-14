@@ -18,7 +18,7 @@ In this repository we collect the MATLAB and Python files, which are needed to:
 https://sourceforge.net/projects/matcont/files/MatCont/MatCont7p5/).
 - [`./comparison plots`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/comparison%20plots) here the different functions files for the TP06 model and its reduced versions are provided as well as a main file to simulate the models using MATLAB and to create comparison plots.
 - [`./cell simulations using cbcbeat`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/cell%20simulations%20using%20cbcbeat) here, we use the ODE solver included in [cbcbeat](https://github.com/ComputationalPhysiology/cbcbeat) to compare the solutions of the full epi-, mid-myo- and endocardial TP06 model with its reduced version (14 dimensional).
-- [`./postprocessing and test`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/postprocessing%20and%20test)
+- [`./postprocessing and test`](https://github.com/andreerhardt/cardiac-dynamics-of-the-TP06-model-with-focus-on-EADs/tree/main/postprocessing%20and%20test) here, we provide several files for postprocessing the data derived by MatCont to create different detailed bifurcation diagrams and a description how to use them.
 
 ## Background
 
