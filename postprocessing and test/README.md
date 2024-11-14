@@ -2,7 +2,7 @@
 
 This folder contains several postprocessing files to produce bifurcation diagrams based on the output data of MatCont. 
 
-##List of files
+## List of files
 - `cpl_stability_codim1.m`
 
 This file creates a 3D equilibrium curve, determines the stability of the curve and the bifurcation points (if existent), i.e. Andronov-Hopf bifurcation, fold bifurcation and branch point bifurcation by calling *cpl_stability_codim1(xeq,seq,feq,variable1,variable2,color,Pointsize,Linesize)*. 
