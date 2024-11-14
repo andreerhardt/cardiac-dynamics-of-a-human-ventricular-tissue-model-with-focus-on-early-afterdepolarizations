@@ -16,5 +16,7 @@ Here, `xlc,vlc,slc` are the data computed by MatCont during certain limit cycle 
 
 - `plot_bif_diagram.m`
 
-This file creates a "full" bifurcation diagram, including the equilibrium curve, its stability, if existing Andronov-Hopf bifurcations, fold bifurcations and branch point bifurcations, and also a the first limit cycle branch including torus bifurcations and Period-Doubling bifurcations if existent. Here, one has to call *plot_bif_diagram(xeq,seq,feq,xlc,slc,flc,variable1,variable2,color,Pointsize,Linesize,e,EdgeAlpha,LineStyle,FaceAlpha)* 
+This file creates a "full" bifurcation diagram, including the equilibrium curve, its stability, if existing Andronov-Hopf bifurcations, fold bifurcations and branch point bifurcations, and also a the first limit cycle branch including torus bifurcations and Period-Doubling bifurcations if existent. Here, one has to call *plot_bif_diagram(xeq,seq,feq,xlc,slc,flc,variable1,variable2,color,Pointsize,Linesize,e,EdgeAlpha,LineStyle,FaceAlpha)*.
+
+- `test_bif_epi_14d.m` contains a small continuation example determinen two supercritical Andronov-Hopf bifurcations and the corresponding equilibrium curve, the first limit cycle branch containing a torus and a Period-Doubling bifurcation (only 200 steps) and a second limit cycle branch (only 150 steps). Running this file takes only some minutes and produces a data set less than 23 MB.
 
