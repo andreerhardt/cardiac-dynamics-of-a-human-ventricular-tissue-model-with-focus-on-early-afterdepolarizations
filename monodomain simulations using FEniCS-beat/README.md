@@ -1,29 +1,10 @@
-# Tentusscher, Panfilov, 2006
+# Description
 
-To reproduce files in this folder, first get the model files from CellML
+In this folder we collect all needed files to run our monodomain simulations using [fenics-bear](https://github.com/finsberg/fenics-beat). We recomment to follow the introducation in [fenics-bear](https://github.com/finsberg/fenics-beat) using docker image and container
 ```
-git clone https://models.physiomeproject.org/workspace/604
+python3 main_monodomain_TP06_epi.py
 ```
-Install `gotran`
+or 
 ```
-python3 -m pip install gotran
-```
-
-Convert cellml files to to gotran ode files
-```
-cellml2gotran ten_tusscher_model_2006_endo.cellml
-cellml2gotran ten_tusscher_model_2006_epi.cellml
-cellml2gotran ten_tusscher_model_2006_m.cellml
-```
-This will generate the following files
-```
-tentusscher_panfilov_2006_endo_cell.ode
-tentusscher_panfilov_2006_epi_cell.ode
-tentusscher_panfilov_2006_M_cell.ode
-```
-Now convert them to python code
-```¨
-gotran2py tentusscher_panfilov_2006_epi_cell.ode --solvers.explicit_euler.generate=1 --solvers.generalized_rush_larsen.generate=1 --code.body.use_enum=1 --namespace=np
-gotran2py tentusscher_panfilov_2006_endo_cell.ode --solvers.explicit_euler.generate=1 --solvers.generalized_rush_larsen.generate=1 --code.body.use_enum=1 --namespace=np
-gotran2py tentusscher_panfilov_2006_M_cell.ode --solvers.explicit_euler.generate=1 --solvers.generalized_rush_larsen.generate=1 --code.body.use_enum=1 --namespace=np
+python3 main_monodomain_TP06_epi_14D.py
 ```
