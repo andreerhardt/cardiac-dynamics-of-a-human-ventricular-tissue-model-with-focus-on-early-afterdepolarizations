@@ -14,7 +14,7 @@ import time
 from cbcbeat import *
 
 #case = 1 # normal AP
-case = 2 # normal EAD mid-myocardial cell or epicardical cell with reduced Ks current after 500 ms
+case = 2 # normal EAD mid-myocardial cell or epicardical cell with reduced IKs and IKr current and enhanced ICaL current
 
 # Define the computational domain
 L    = 100 # mm
@@ -22,7 +22,10 @@ mesh = RectangleMesh(Point(0,0),Point(L,L),400,400,'left/right') # Computational
 
 # Time stepping parameters
 time     = Constant(0.0)
-T        = 10000.0
+if case == 1:
+    T    = 10000.0
+elif case == 2:
+    T    = 6000.0
 nsteps   = round(T)
 interval = (0.0, T)
 
@@ -83,7 +86,7 @@ cardiac_model = CardiacModel(mesh, time, M_i, M_e, cell_model, stimulus)
 ps = SplittingSolver.default_parameters()
 ps["theta"] = 0.5                                               # Second order splitting scheme - Time stepping parameter (Crank-Nicolson)
 ps["pde_solver"] = "monodomain"                                 # Use Monodomain model for the PDEs
-ps["CardiacODESolver"]["scheme"] = "RL1"                       # 1st order Rush-Larsen for the ODEs GRL1, RL1
+ps["CardiacODESolver"]["scheme"] = "RL1"                        # 1st order Rush-Larsen for the ODEs GRL1, RL1
 ps["MonodomainSolver"]["linear_solver_type"] = "iterative"
 ps["MonodomainSolver"]["algorithm"] = "cg"
 ps["MonodomainSolver"]["preconditioner"] = "petsc_amg"
