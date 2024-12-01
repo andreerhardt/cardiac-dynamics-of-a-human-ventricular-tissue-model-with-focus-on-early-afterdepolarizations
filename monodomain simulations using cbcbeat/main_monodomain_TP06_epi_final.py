@@ -68,7 +68,6 @@ elif case == 2:
     dt            = 0.02
     duration      = 1.5
     delay         = 340.0
-    print(dt)
 
 stimulus = Expression(
               "(t < duration && x[0] < 0.1*L)?52.0:((t > delay && t < delay+duration) && (x[1] < L/2 ))?52.0:0.0",
