@@ -1,6 +1,6 @@
 # Description
 
-In this folder we collect all needed files to run our monodomain simulations using [fenics-beat](https://github.com/finsberg/fenics-beat). We recomment to follow the introducation in [fenics-beat](https://github.com/finsberg/fenics-beat) using docker image and container
+In this folder we collect all needed files to run our monodomain simulations using [cbcbeat](https://github.com/ComputationalPhysiology/cbcbeat). 
 ```
 python3 main_monodomain_TP06_epi_final.py
 ```
