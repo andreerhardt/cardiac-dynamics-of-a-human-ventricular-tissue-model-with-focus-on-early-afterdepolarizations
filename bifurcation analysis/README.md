@@ -25,3 +25,5 @@ Here, the needed files for the numerical bifurcation analysis of the modified mo
   
   _From left to right: Bifurcation diagramm of the 14-dimensional, 16-dimensional and 18-dimensional modified TP06 endocardial model as stated the our manuscript_
 </p>
+
+Finally, the main bifurcation diagram of our paper is derived by running `TP06_14D_bifurcation_epi.m`, followed by `TP06_14D_epi_pd.m` and followed by `TP06_14D_epi_pd_1.m`.
