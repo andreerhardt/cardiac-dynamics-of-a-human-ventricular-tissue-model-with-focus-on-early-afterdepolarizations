@@ -13,14 +13,11 @@ load(name)
 
 [x1,v1] = init_PD_LC(@TP06_epi_14d_bif,xpd,spd(2),ntst,ncol,h*10000);%*10000
 
-opt = contset(opt,'MaxNumPoints'       ,    25); % 100
-opt = contset(opt,'MaxStepsize'        ,       0.1);
+opt = contset(opt,'MaxNumPoints'       ,     100);
+opt = contset(opt,'MaxStepsize'        ,     0.1);
 opt = contset(opt,'MaxNewtonIters'     ,       3);
 opt = contset(opt,'MaxCorrIters'       ,     100);
 opt = contset(opt,'MaxTestIters'       ,     100);
-% opt = contset(opt,'VarTolerance'       ,   1e-4);
-% opt = contset(opt,'FunTolerance'       ,   1e-4);
-% opt = contset(opt,'TestTolerance'      ,   1e-4);
 
 [xpd1,vpd1,spd1,hpd1,fpd1]=cont(@limitcycle,x1,v1,opt);
 [xpd1,vpd1,spd1,hpd1,fpd1]=cont(xpd1,vpd1,spd1,hpd1,fpd1,cds);
@@ -30,92 +27,15 @@ for i = 1:2
     save(name)
 end
 
-% [x1,v1] = init_PD_LC(@TP06_epi_14d_bif,xpd1,spd1(end),ntst,ncol,h);
 par = spd1(end).data.parametervalues;
 [x1,v1] = init_LC_LC(@TP06_epi_14d_bif,xpd1,vpd1,spd1(end),par,ap,ntst,ncol);
 opt = contset(opt,'MaxStepsize'        ,       10);
 [xpd2,vpd2,spd2,hpd2,fpd2]=cont(@limitcycle,x1,v1,opt);
 [xpd2,vpd2,spd2,hpd2,fpd2]=cont(xpd2,vpd2,spd2,hpd2,fpd2,cds);
 
-% par = spd2(end).data.parametervalues;
-% [x1,v1] = init_LC_LC(@TP06_epi_14d_bif,xpd2,vpd2,spd2(end),par,ap,ntst,ncol);
 [x1,v1] = init_PD_LC(@TP06_epi_14d_bif,xpd1,spd1(2),ntst,ncol,h*10000);
-% opt = contset(opt,'MaxStepsize'        ,       2);
-% opt = contset;
-% opt = contset(opt,'MaxStepsize'        ,       5);
-% opt = contset(opt,'Backward'           ,       0);
-% opt = contset(opt,'MaxNumPoints'       ,      50); 
-% opt = contset(opt,'MaxCorrIters'       ,     100);
-% opt = contset(opt,'MaxTestIters'       ,     100);
-% opt = contset(opt,'VarTolerance'       ,   1e-4);
-% opt = contset(opt,'FunTolerance'       ,   1e-4);
-% opt = contset(opt,'TestTolerance'      ,   1e-4);
 [xpd3,vpd3,spd3,hpd3,fpd3]=cont(@limitcycle,x1,v1,opt);
 [xpd3,vpd3,spd3,hpd3,fpd3]=cont(xpd3,vpd3,spd3,hpd3,fpd3,cds);
-
-figure;
-hold on
-cpl(xeq,veq,seq,[size(xeq,1) 1],[0 0 0]);
-cpl(xeq1,veq1,seq1,[size(xeq1,1) 1],[0 0 0]);
-cpl(xeq1a,veq1a,seq1a,[size(xeq1a,1) 1],[0 0 0]);
-xlabel('bifurcation parameter')
-ylabel('voltage V')
-hold on
-ODEDim = size(xeq,1)-1;
-points = size(xlc,2);
-xx     = xlc(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xlc(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vlc, slc, [1 2]);
-cpl([Param; xmin'], vlc, slc, [1 2]);
-
-points = size(xlc1,2);
-xx     = xlc1(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xlc1(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vlc1, slc1, [1 2]);
-cpl([Param; xmin'], vlc1, slc1, [1 2]);
-
-points = size(xpd,2);
-xx     = xpd(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xpd(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vpd, spd, [1 2]);
-cpl([Param; xmin'], vpd, spd, [1 2]);
-
-points = size(xpd1,2);
-xx     = xpd1(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xpd1(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vpd1, spd1, [1 2]);
-cpl([Param; xmin'], vpd1, spd1, [1 2]);
-
-points = size(xpd2,2);
-xx     = xpd2(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xpd2(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vpd2, spd2, [1 2]);
-cpl([Param; xmin'], vpd2, spd2, [1 2]);
-xlim([0.06 0.13])
-
-points = size(xpd3,2);
-xx     = xpd3(1:end-2,:);
-xx     = reshape(xx, [ODEDim size(xx,1)/ODEDim points]);
-Param  = xpd3(end,:);
-xmax   = squeeze(max(xx(1,:,:), [], 2));
-xmin   = squeeze(min(xx(1,:,:), [], 2));
-cpl([Param; xmax'], vpd3, spd3, [1 2]);
-cpl([Param; xmin'], vpd3, spd3, [1 2]);
 
 [Y1,Z1] = meshgrid(0:0.025:1,-85:40:85);
 X1     = 0.098*Y1./Y1;
@@ -123,7 +43,6 @@ X1     = 0.098*Y1./Y1;
 figure;
 q = 6;
 hold on
-%cpl_stability_codim1(xeq,seq,feq,q,1,[0 0 0],50,3)
 plotlimitcycle(xpd(:,1:1:end),vpd(:,1:1:end),spd,[size(xpd,1) q 1],[0 1 1],0.3,'none',0.2)
 plotlimitcycle(xpd1(:,1:1:end),vpd1(:,1:1:end),spd1,[size(xpd1,1) q 1],[0 0 1],0.5,'none',0.5)
 plotlimitcycle(xpd2(:,1:1:end),vpd2(:,1:1:end),spd2,[size(xpd2,1) q 1],[0 0 1],0.5,'none',0.5)
