@@ -29,7 +29,7 @@ caxis([-90 60]);
 
 % --- PDE model function ---
 function [c, f, s] = pdeModel(x, t, u, DuDx)
-    D  = 0.154;
+    D     = 0.154;
     g_Kr  = 0.153*0.1;
     g_Na  = 14.838; 
     g_K1  = 5.405; 
